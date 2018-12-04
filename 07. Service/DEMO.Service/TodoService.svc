@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DEMO.Service.TodoService" Factory="DEMO.Service.WcfServiceFactory" %>

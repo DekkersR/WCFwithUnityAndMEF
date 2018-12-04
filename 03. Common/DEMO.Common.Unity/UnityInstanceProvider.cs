@@ -13,8 +13,8 @@ namespace DEMO.Common.Unity
 
         public UnityInstanceProvider(IUnityContainer container, Type contractType)
         {
-            _container = container ?? throw new ArgumentNullException("container");
-            _contractType = contractType ?? throw new ArgumentNullException("contractType");
+            _container = container ?? throw new ArgumentNullException(nameof(container));
+            _contractType = contractType ?? throw new ArgumentNullException(nameof(contractType));
         }
 
         public object GetInstance(InstanceContext instanceContext, Message message)

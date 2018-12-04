@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Composition" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\03. Common\DEMO.Common.MEF.Interface\DEMO.Common.MEF.Interface.csproj" />
     <ProjectReference Include="..\..\04. Entities\DEMO.Entities\DEMO.Entities.csproj" />
   </ItemGroup>

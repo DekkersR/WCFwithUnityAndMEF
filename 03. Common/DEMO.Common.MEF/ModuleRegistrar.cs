@@ -21,6 +21,11 @@ namespace DEMO.Common.MEF
             _container.RegisterInstance<TInterface>(name, instance);
         }
 
+        public void RegisterInstance<TInterface>(TInterface instance)
+        {
+            _container.RegisterInstance<TInterface>(instance);
+        }
+
         public void RegisterType<TFrom, TTo>(bool withInterception = false) where TTo : TFrom
         {
             RegisterType<TFrom, TTo>(null, withInterception);

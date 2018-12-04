@@ -6,7 +6,9 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Composition" Version="4.5.0" />
     <PackageReference Include="System.Composition" Version="1.2.0" />
+    <PackageReference Include="Unity" Version="5.8.12" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DEMO.Common.MEF.Interface\DEMO.Common.MEF.Interface.csproj" />

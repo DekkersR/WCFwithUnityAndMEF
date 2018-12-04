@@ -12,9 +12,10 @@ namespace DEMO.Common.MEF
 {
     public class ModuleLoader
     {
-        public static void LoadContainer(IUnityContainer container,  string pattern)
+        public static void LoadContainer(IUnityContainer container, string path, string pattern)
         {
-            var directory = AppDomain.CurrentDomain.BaseDirectory;
+            //DirectoryCatalog
+            var directory = AppDomain.CurrentDomain.BaseDirectory + "\\bin";
             var files = Directory.EnumerateFiles(directory, pattern, SearchOption.AllDirectories);
             var listOfAssamlies = getAssemblies(files.ToList());
 

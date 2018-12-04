@@ -18,6 +18,8 @@ namespace DEMO.Common.MEF.Interface
 
         void RegisterInstance<TInterface>(string name, TInterface instance);
 
+        void RegisterInstance<TInterface>(TInterface instance);
+
         TInterface Resolve<TInterface>();
 
         TInterface Resolve<TInterface>(string name);

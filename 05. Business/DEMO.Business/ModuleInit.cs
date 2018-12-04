@@ -2,6 +2,7 @@
 using DEMO.Common.MEF.Interface;
 using System.Composition;
 using System.Diagnostics.CodeAnalysis;
+//using System.ComponentModel.Composition;
 
 namespace DEMO.Business
 {
